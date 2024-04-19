@@ -14,9 +14,15 @@ function grid (count) {
     }
     const boxHover = document.querySelectorAll(".box");
     boxHover.forEach((element) => {
+        let percentage = parseFloat(0);
         element.addEventListener("mouseover", (event) => {
             const randomColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
             element.style.backgroundColor = randomColor;
+            if (event && percentage < 1) {
+                percentage += (1 / 10);
+                element.style.opacity = percentage;
+            }
+            console.log(percentage);
         })
     })
 }

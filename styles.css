@@ -1,14 +1,36 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: gainsboro;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 button {
     margin-top: 2vw;
     margin-bottom: 50px;
+    padding: 2px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    border: 10px solid black;
+    border: 10px solid gray;
     width: 500px;
     height: 500px;
+    background-color: white;
 }
 
 .grid-row {
@@ -19,5 +41,4 @@ button {
 
 .box {
     width: 100%;
-    border: 1px solid black;
 }
